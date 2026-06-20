@@ -1,0 +1,39 @@
+specification: API Commons Rate Limits
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/RateLimits
+provider: Found
+providerId: found-business
+created: '2026-06-20'
+modified: '2026-06-20'
+reconciled: false
+tags:
+- Fintech
+- Business Banking
+- Bookkeeping
+- Taxes
+- Self-Employed
+- Rate Limiting
+- Quotas
+- Throttling
+description: >-
+  Found does not publish a public or partner developer API, and therefore
+  publishes no API rate limits, quotas, or throttling policies. Any limits that
+  exist are internal to the Found web and mobile applications and are not
+  documented for external consumers. This artifact is intentionally unreconciled.
+notes: >-
+  No API rate limits are documented because Found exposes no public API. If Found
+  ever publishes a developer API, capture per-endpoint RPM/quota values here and
+  set reconciled true.
+sources:
+- https://found.com/
+- https://found.com/help
+responseCodes: {}
+limits: []
+policies:
+- name: No Public API
+  description: >-
+    Found provides no documented public API surface, so there are no published
+    rate limits, quotas, or throttling rules to reconcile.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

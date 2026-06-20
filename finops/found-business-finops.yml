@@ -1,0 +1,78 @@
+specification: FinOps Framework
+specificationVersion: '1.0'
+schema: https://www.finops.org/framework/
+provider: Found
+providerId: found-business
+created: '2026-06-20'
+modified: '2026-06-20'
+reconciled: false
+tags:
+- Fintech
+- Business Banking
+- Bookkeeping
+- Taxes
+- Self-Employed
+- FinOps
+- Cost Management
+- FOCUS
+description: >-
+  FinOps view of Found spend. Found has no usage-metered API billing because it
+  exposes no public developer API. Costs to a Found customer are subscription
+  based: a free core plan plus optional Found Plus ($35/month, $315/year) and
+  Found Pro ($80/month, $720/year) tiers. Banking is provided by Lead Bank
+  (Member FDIC). The meters below model subscription charges, not API usage.
+notes: >-
+  Subscription pricing is public; there are no API usage meters because Found has
+  no public API. Reconciled false because there is no programmatic billing or
+  usage export to align with FOCUS. Verify current subscription prices on the
+  Found pricing and help pages.
+sources:
+- https://found.com/
+- https://found.com/help/found-plus/what-is-found-plus
+- https://focus.finops.org/focus-specification/v1-3/
+alignedWith:
+  framework: FinOps Foundation Framework
+  frameworkUrl: https://www.finops.org/framework/
+  dataSpec: FOCUS
+  dataSpecVersion: '1.3'
+  dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
+publisherName: Found
+serviceCategory: Financial Services
+billingModel:
+  pricingCategory: Subscription-Based
+  billingFrequency: Monthly
+  billingCurrency: USD
+  chargeCategories:
+  - Purchase
+  - Adjustment
+focusColumns:
+  ServiceName: Found
+  ServiceCategory: Financial Services
+  ProviderName: Found
+  PublisherName: Found
+  InvoiceIssuerName: Found
+  BillingCurrency: USD
+  ChargeCategory: Purchase
+  PricingCategory: Subscription-Based
+meters:
+- name: subscription_fee
+  description: >-
+    Monthly or annual subscription fee for the Found Plus or Found Pro tier; the
+    core Found plan is free. This is a flat subscription charge, not API usage.
+  unit: subscription
+  aggregation: sum
+  dimensions:
+  - account
+  - plan
+principles:
+- name: Visibility
+  description: Review the Found subscription tier (Free, Plus, Pro) and its monthly/annual fee.
+- name: Allocation
+  description: Map the Found subscription cost to the self-employed owner or business as a flat operating expense.
+- name: Optimization
+  description: Choose the free plan unless the APY bonus, custom categories, or quarterly tax payments in Plus/Pro justify the fee.
+- name: Accountability
+  description: Re-evaluate the subscription tier periodically against actual feature usage.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

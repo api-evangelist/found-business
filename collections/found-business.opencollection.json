@@ -1,0 +1,9 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Found",
+    "version": "0.0.0",
+    "description": "Found (found.com) publishes no public or partner developer API as of the 2026-06-20 API Evangelist review. This Open Collection is intentionally empty of requests; no endpoints were fabricated. It will be populated only if Found publishes a documented API."
+  },
+  "items": []
+}

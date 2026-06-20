@@ -1,0 +1,124 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: Found
+providerId: found-business
+created: '2026-06-20'
+modified: '2026-06-20'
+reconciled: true
+tags:
+- Fintech
+- Business Banking
+- Bookkeeping
+- Taxes
+- Self-Employed
+- Plans
+description: >-
+  Found offers a free core plan (no required monthly fee) that includes business
+  checking, a debit card, bookkeeping, invoicing, tax estimates, and contractor
+  payments, plus two optional paid subscriptions: Found Plus ($35/month or
+  $315/year) and Found Pro ($80/month or $720/year). Pricing reflects the public
+  Found product and help pages; these are consumer/SMB application plans, not API
+  access plans, because Found does not publish a developer API.
+notes: >-
+  Plan pricing is publicly published by Found and reconciled true. There are no
+  API pricing or developer plans because Found exposes no public API. APY figures
+  and quarterly tax payment availability are application features tied to the
+  paid tiers; verify current rates on the Found pricing and help pages.
+sources:
+- https://found.com/
+- https://found.com/help/found-plus/what-is-found-plus
+plans:
+- id: found-free
+  name: Found (Free)
+  type: free
+  description: >-
+    Free business checking with no required monthly fee, including debit card,
+    bookkeeping, invoicing, tax estimates and savings set-aside, and contractor
+    payments, with limited customization (e.g., one custom category and three
+    tags).
+  entries:
+  - label: Monthly Fee
+    name: monthly_fee
+    type: flat
+    metric: subscription
+    limit: -1
+    timeFrame: month
+    geo: us
+    unit: 1
+    price: $0
+    userMultiplied: false
+  elements:
+  - name: Business Checking
+  - name: Bookkeeping
+  - name: Invoicing
+  - name: Tax Estimates
+  - name: Contractor Payments
+- id: found-plus
+  name: Found Plus
+  type: subscription
+  description: >-
+    Optional subscription adding a 1.50% APY bonus on balances up to $20,000,
+    unlimited custom expense categories, category rules and tags, priority phone
+    support, and the ability to pay quarterly federal taxes from the app.
+  entries:
+  - label: Found Plus Monthly
+    name: found_plus_monthly
+    type: flat
+    metric: subscription
+    limit: -1
+    timeFrame: month
+    geo: us
+    unit: 1
+    price: $35 per month
+    userMultiplied: false
+  - label: Found Plus Annual
+    name: found_plus_annual
+    type: flat
+    metric: subscription
+    limit: -1
+    timeFrame: year
+    geo: us
+    unit: 1
+    price: $315 per year
+    userMultiplied: false
+  elements:
+  - name: 1.50% APY Bonus (up to $20,000)
+  - name: Unlimited Custom Categories
+  - name: Unlimited Tags
+  - name: Priority Phone Support
+  - name: Quarterly Federal Tax Payments
+- id: found-pro
+  name: Found Pro
+  type: subscription
+  description: >-
+    Higher subscription tier including all Found Plus features plus a dedicated
+    account manager and a 2.50% APY on all balances.
+  entries:
+  - label: Found Pro Monthly
+    name: found_pro_monthly
+    type: flat
+    metric: subscription
+    limit: -1
+    timeFrame: month
+    geo: us
+    unit: 1
+    price: $80 per month
+    userMultiplied: false
+  - label: Found Pro Annual
+    name: found_pro_annual
+    type: flat
+    metric: subscription
+    limit: -1
+    timeFrame: year
+    geo: us
+    unit: 1
+    price: $720 per year
+    userMultiplied: false
+  elements:
+  - name: All Found Plus Features
+  - name: Dedicated Account Manager
+  - name: 2.50% APY (all balances)
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

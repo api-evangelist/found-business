@@ -1,0 +1,119 @@
+aid: found-business
+url: https://raw.githubusercontent.com/api-evangelist/found-business/refs/heads/main/apis.yml
+name: Found
+kind: company
+description: Found is a fintech business-banking app for the self-employed, freelancers,
+  and sole proprietors that combines a free business checking account (banking
+  services provided by Lead Bank, Member FDIC) with built-in bookkeeping, real-time
+  tax estimates and payments, invoicing, and contractor management. As of the
+  2026-06-20 review Found exposes no public or partner developer API; the surfaces
+  below are documented as in-app product features, not programmatic APIs.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Fintech
+- Business Banking
+- Bookkeeping
+- Taxes
+- Self-Employed
+created: '2026-06-20'
+modified: '2026-06-20'
+specificationVersion: '0.19'
+apis:
+- aid: found-business:found-banking
+  name: Found Banking
+  tags:
+  - Banking
+  - Checking
+  - Debit Card
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://found.com/banking
+  properties:
+  - url: https://found.com/banking
+    type: Documentation
+  - url: openapi/found-business-openapi.yml
+    type: OpenAPI
+  description: Free business checking with a Mastercard business debit card, team
+    cards with spend controls, check and cash deposits, wires, check payments,
+    contractor payments, and sub-accounts. App feature only; no public API is
+    documented. Banking services provided by Lead Bank, Member FDIC.
+- aid: found-business:found-bookkeeping
+  name: Found Bookkeeping
+  tags:
+  - Bookkeeping
+  - Expenses
+  - Reports
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://found.com/bookkeeping
+  properties:
+  - url: https://found.com/bookkeeping
+    type: Documentation
+  - url: openapi/found-business-openapi.yml
+    type: OpenAPI
+  description: Automatic expense and income tracking, custom rules and tags, receipt
+    scanning, importing external transactions, and financial reports. App feature
+    only; no public API is documented.
+- aid: found-business:found-taxes
+  name: Found Taxes
+  tags:
+  - Taxes
+  - Estimated Taxes
+  - 1099
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://found.com/taxes
+  properties:
+  - url: https://found.com/taxes
+    type: Documentation
+  - url: openapi/found-business-openapi.yml
+    type: OpenAPI
+  description: Real-time tax estimates with automatic tax savings set-aside, automatic
+    write-offs, tax form generation, mileage tracking, and quarterly federal tax
+    payments from the app (Schedule C filers on the Found Plus plan). App feature
+    only; no public API is documented.
+- aid: found-business:found-invoicing
+  name: Found Invoicing
+  tags:
+  - Invoicing
+  - Payments
+  - Billing
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://found.com/invoicing
+  properties:
+  - url: https://found.com/invoicing
+    type: Documentation
+  - url: openapi/found-business-openapi.yml
+    type: OpenAPI
+  description: Create and send invoices, track their status, and get paid directly
+    into the Found account, with invoice income flowing into bookkeeping and tax
+    estimates. App feature only; no public API is documented.
+- aid: found-business:found-contractors
+  name: Found Contractor Management
+  tags:
+  - Contractors
+  - 1099-NEC
+  - Payments
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://found.com/contractors
+  properties:
+  - url: https://found.com/contractors
+    type: Documentation
+  - url: openapi/found-business-openapi.yml
+    type: OpenAPI
+  description: Unlimited contractor payments with no per-contractor fees, flexible
+    payment methods, W-9 collection, and free 1099-NEC generation and filing.
+    App feature only; no public API is documented.
+common:
+- type: LinkedIn
+  url: https://www.linkedin.com/company/foundforbusiness
+- type: Website
+  url: https://found.com/
+- type: Documentation
+  url: https://found.com/help
+- type: Plans
+  url: plans/found-business-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/found-business-rate-limits.yml
+- type: FinOps
+  url: finops/found-business-finops.yml
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

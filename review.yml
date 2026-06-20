@@ -1,0 +1,91 @@
+aid: found-business
+name: Found
+review:
+  question: Does Found expose a documented public or partner developer API?
+  answer: false
+  date: '2026-06-20'
+  reviewer: API Evangelist
+  asyncapiSpecCreated: false
+  asyncapiScopeNote: |
+    No AsyncAPI document was created. Found publishes no public API of any
+    protocol (REST, SSE, or WebSocket), so there is no event-driven or
+    streaming surface to model.
+findings:
+  summary: |
+    Found (found.com) is a fintech business-banking application for the
+    self-employed, freelancers, and sole proprietors. It bundles a free
+    business checking account (banking provided by Lead Bank, Member FDIC;
+    card processing powered by Marqeta) with bookkeeping, real-time tax
+    estimates and quarterly tax payments, invoicing, and contractor
+    management. As of the 2026-06-20 review, Found publishes NO public
+    developer API, NO partner API, and NO public API reference or developer
+    documentation. The product is delivered solely through its web and mobile
+    apps. The five surfaces cataloged here (Banking, Bookkeeping, Taxes,
+    Invoicing, Contractor Management) are in-app product features, not
+    programmatic APIs. No endpoints were fabricated; the OpenAPI artifact ships
+    with empty paths.
+  disambiguation:
+    note: |
+      "Found" is an overloaded brand name. This catalog covers ONLY found.com,
+      the business-banking app for the self-employed. It is distinct from:
+        - Found.ee (dev.found.ee) — a music/link marketing platform that DOES
+          have a partner API; unrelated to found.com.
+        - Found (joinfound.com) — a weight-care / GLP-1 telehealth company.
+        - Foundation Building Materials and similar "Foundation"/"Found"
+          construction or supply companies.
+      Search results that surface a "Found" developer API almost always refer
+      to Found.ee, not found.com.
+  transports:
+    - protocol: REST
+      scheme: https
+      documented: false
+      note: No public REST API base URL or reference is documented by found.com.
+    - protocol: SSE
+      scheme: https
+      documented: false
+      note: No Server-Sent Events surface is documented.
+    - protocol: WebSocket
+      scheme: wss
+      documented: false
+      note: No WebSocket surface is documented.
+  endpointsConfirmedRest: []
+  productSurfaces:
+    - name: Banking
+      type: app-feature
+      note: Free business checking, Mastercard debit card, team cards, deposits, wires, sub-accounts. Banking by Lead Bank, Member FDIC.
+    - name: Bookkeeping
+      type: app-feature
+      note: Expense/income tracking, rules and tags, receipt scanning, transaction import, reports.
+    - name: Taxes
+      type: app-feature
+      note: Real-time tax estimates, savings set-aside, write-offs, form generation, mileage, quarterly federal tax payments (Found Plus).
+    - name: Invoicing
+      type: app-feature
+      note: Create/send invoices and get paid into the Found account; flows into bookkeeping and tax estimates.
+    - name: Contractor Management
+      type: app-feature
+      note: Unlimited contractor payments, W-9 collection, free 1099-NEC generation and filing.
+sources:
+  - url: https://found.com/
+    type: Website
+    note: Product homepage; lists Banking, Bookkeeping, Taxes, and Contractor Management features. No API or developer link.
+  - url: https://found.com/help
+    type: Documentation
+    note: Help center for end users; no developer or API documentation.
+  - url: https://found.com/help/found-plus/what-is-found-plus
+    type: Documentation
+    note: Found Plus pricing ($35/mo, $315/yr) and feature list; free core plan; Found Pro at $80/mo, $720/yr.
+  - url: https://www.businesswire.com/news/home/20240926397885/en/Marqeta-and-Found-Bring-Streamlined-Expense-Management-Offerings-to-SMBs-and-Self-Employed-Professionals
+    type: PressRelease
+    note: Marqeta powers Found's commercial card; a vendor relationship, not a customer-facing API.
+actions:
+  asyncapiPath: null
+  apisYmlUpdated: true
+  reason: |
+    No public API surface exists, so apis.yml documents the product as a set of
+    in-app feature surfaces marked as app features, the OpenAPI artifact ships
+    with empty paths, and rate-limits and finops are left reconciled false. No
+    AsyncAPI, GraphQL, Postman, or Open Collection endpoints were fabricated.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
