@@ -102,6 +102,12 @@ apis:
     payment methods, W-9 collection, and free 1099-NEC generation and filing.
     App feature only; no public API is documented.
 common:
+- type: TrustCenter
+  url: security/found-business-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/found-business-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/found-business-domain-security.yml
 - type: LinkedIn
   url: https://www.linkedin.com/company/foundforbusiness
 - type: Website
