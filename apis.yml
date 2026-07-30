@@ -8,7 +8,19 @@ description: Found is a fintech business-banking app for the self-employed, free
   tax estimates and payments, invoicing, and contractor management. As of the
   2026-06-20 review Found exposes no public or partner developer API; the surfaces
   below are documented as in-app product features, not programmatic APIs.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Freemium
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/found-business.png
 tags:
 - Fintech
 - Business Banking
