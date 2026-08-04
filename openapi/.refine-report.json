@@ -1,0 +1,14 @@
+{
+  "provider": "found-business",
+  "sources": [
+    "found-business-openapi.yml"
+  ],
+  "outputs": [],
+  "archived": [
+    "archived found-business-openapi.yml"
+  ],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
