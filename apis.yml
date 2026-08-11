@@ -42,7 +42,7 @@ apis:
   properties:
   - url: https://found.com/banking
     type: Documentation
-  - url: openapi/found-business-openapi.yml
+  - url: openapi/_original/found-business-openapi.yml
     type: OpenAPI
   description: Free business checking with a Mastercard business debit card, team
     cards with spend controls, check and cash deposits, wires, check payments,
@@ -59,7 +59,7 @@ apis:
   properties:
   - url: https://found.com/bookkeeping
     type: Documentation
-  - url: openapi/found-business-openapi.yml
+  - url: openapi/_original/found-business-openapi.yml
     type: OpenAPI
   description: Automatic expense and income tracking, custom rules and tags, receipt
     scanning, importing external transactions, and financial reports. App feature
@@ -75,7 +75,7 @@ apis:
   properties:
   - url: https://found.com/taxes
     type: Documentation
-  - url: openapi/found-business-openapi.yml
+  - url: openapi/_original/found-business-openapi.yml
     type: OpenAPI
   description: Real-time tax estimates with automatic tax savings set-aside, automatic
     write-offs, tax form generation, mileage tracking, and quarterly federal tax
@@ -92,7 +92,7 @@ apis:
   properties:
   - url: https://found.com/invoicing
     type: Documentation
-  - url: openapi/found-business-openapi.yml
+  - url: openapi/_original/found-business-openapi.yml
     type: OpenAPI
   description: Create and send invoices, track their status, and get paid directly
     into the Found account, with invoice income flowing into bookkeeping and tax
@@ -108,7 +108,7 @@ apis:
   properties:
   - url: https://found.com/contractors
     type: Documentation
-  - url: openapi/found-business-openapi.yml
+  - url: openapi/_original/found-business-openapi.yml
     type: OpenAPI
   description: Unlimited contractor payments with no per-contractor fees, flexible
     payment methods, W-9 collection, and free 1099-NEC generation and filing.
