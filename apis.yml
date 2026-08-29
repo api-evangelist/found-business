@@ -1,5 +1,7 @@
 aid: found-business
 url: https://raw.githubusercontent.com/api-evangelist/found-business/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
 name: Found
 kind: company
 description: Found is a fintech business-banking app for the self-employed, freelancers,
