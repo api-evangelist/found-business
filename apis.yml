@@ -37,6 +37,12 @@ tags:
 - Fintech
 - Business Banking
 - Bookkeeping
+- Tax
+- Self-Employed
+tags_raw:
+- Fintech
+- Business Banking
+- Bookkeeping
 - Taxes
 - Self-Employed
 created: '2026-06-20'
@@ -46,6 +52,10 @@ apis:
 - aid: found-business:found-banking
   name: Found Banking
   tags:
+  - Banking
+  - Checking
+  - Debit Cards
+  tags_raw:
   - Banking
   - Checking
   - Debit Card
@@ -77,6 +87,10 @@ apis:
 - aid: found-business:found-taxes
   name: Found Taxes
   tags:
+  - Tax
+  - Estimated Taxes
+  - 1099
+  tags_raw:
   - Taxes
   - Estimated Taxes
   - 1099
