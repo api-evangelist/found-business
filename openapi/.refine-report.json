@@ -1,14 +1,17 @@
 {
   "provider": "found-business",
   "sources": [
-    "found-business-openapi.yml"
+    "_original/found-business-openapi.yml"
   ],
   "outputs": [],
-  "archived": [
-    "archived found-business-openapi.yml"
-  ],
+  "archived": [],
   "errors": [],
-  "warnings": [],
-  "notes": [],
+  "warnings": [
+    "produced no outputs (1 source(s) have no operations) \u2014 sources left in place rather than archived"
+  ],
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "found-business-openapi.yml: upgraded openapi 3.0.1 -> OpenAPI 3.2.0"
+  ],
   "skipped": []
 }
