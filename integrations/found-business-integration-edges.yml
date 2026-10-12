@@ -1,0 +1,18 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/found-business/integrations
+- https://zapier.com/apps/found/integrations
+- https://n8n.io/integrations/found-business/
+- https://composio.dev/toolkits/found-business
+- https://monid.ai/tools/found-business
+checked:
+- https://composio.dev/toolkits/found-business
+- https://monid.ai/tools/found-business
+- https://n8n.io/integrations/found-business/
+- https://zapier.com/apps/found-business/integrations
+- https://zapier.com/apps/found/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
