@@ -1,4 +1,4 @@
-# Found (found-business)
+# Found
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,128 +66,121 @@
 
 Found is a fintech business-banking app for the self-employed, freelancers, and sole proprietors that combines a free business checking account (banking services provided by Lead Bank, Member FDIC) with built-in bookkeeping, real-time tax estimates and payments, invoicing, and contractor management. As of the 2026-06-20 review Found exposes no public or partner developer API; the surfaces below are documented as in-app product features, not programmatic APIs.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/found-business/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/found-business/refs/heads/main/apis.yml)
+**Areas:** Fintech · Business Banking · Bookkeeping · Tax · Self-Employed
 
-## Tags
+## Found on APIs.io
 
-- Fintech
-- Business Banking
-- Bookkeeping
-- Taxes
-- Self-Employed
+Everything profiled for Found is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/found-business/](https://apis.io/providers/found-business/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (5)
 
-- **Created:** 2026-06-20
-- **Modified:** 2026-06-20
+- [Found Banking](https://apis.io/apis/found-business/found-banking/) — Free business checking with a Mastercard business debit card, team cards with spend controls, check and cash deposits, wires, check payments, contractor…
+- [Found Bookkeeping](https://apis.io/apis/found-business/found-bookkeeping/) — Automatic expense and income tracking, custom rules and tags, receipt scanning, importing external transactions, and financial reports. App feature only; no…
+- [Found Taxes](https://apis.io/apis/found-business/found-taxes/) — Real-time tax estimates with automatic tax savings set-aside, automatic write-offs, tax form generation, mileage tracking, and quarterly federal tax…
+- [Found Invoicing](https://apis.io/apis/found-business/found-invoicing/) — Create and send invoices, track their status, and get paid directly into the Found account, with invoice income flowing into bookkeeping and tax estimates.…
+- [Found Contractor Management](https://apis.io/apis/found-business/found-contractors/) — Unlimited contractor payments with no per-contractor fees, flexible payment methods, W-9 collection, and free 1099-NEC generation and filing. App feature…
 
-## APIs
+### Published properties
 
-### Found Banking
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-Free business checking with a Mastercard business debit card, team cards with spend controls, check and cash deposits, wires, check payments, contractor payments, and sub-accounts. App feature only; no public API is documented. Banking services provided by Lead Bank, Member FDIC.
+#### MCP servers (1)
 
-- **Human URL:** [https://found.com/banking](https://found.com/banking)
+Model Context Protocol servers that expose the API to agents.
 
-#### Tags
+- [found-business](https://apis.io/servers/found-business/found-business/)
 
-- Banking
-- Checking
-- Debit Card
+#### Collections (1)
 
-#### Properties
+Postman and Open Collection request collections.
 
-- [Documentation](https://found.com/banking)
-- [OpenAPI](openapi/found-business-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/found-business.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/found-business.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Found](https://apis.io/collections/found-business/open-found-business/)
 
-### Found Bookkeeping
+#### Security (3)
 
-Automatic expense and income tracking, custom rules and tags, receipt scanning, importing external transactions, and financial reports. App feature only; no public API is documented.
+Authentication, trust centre, and vulnerability disclosure.
 
-- **Human URL:** [https://found.com/bookkeeping](https://found.com/bookkeeping)
+- [Found Business Domain Security](https://apis.io/security/found-business/found-business-domain-security/)
+- [Found Business Trust Center](https://apis.io/security/found-business/found-business-trust-center/)
+- [Found Business Vulnerability Disclosure](https://apis.io/security/found-business/found-business-vulnerability-disclosure/)
 
-#### Tags
+#### Plans and pricing (1)
 
-- Bookkeeping
-- Expenses
-- Reports
+Published plans, tiers and prices.
 
-#### Properties
+- [Found Business Plans Pricing](https://apis.io/plans/found-business/found-business-plans-pricing/)
 
-- [Documentation](https://found.com/bookkeeping)
-- [OpenAPI](openapi/found-business-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/found-business.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/found-business.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+#### Rate limits (1)
 
-### Found Taxes
+Published request limits.
 
-Real-time tax estimates with automatic tax savings set-aside, automatic write-offs, tax form generation, mileage tracking, and quarterly federal tax payments from the app (Schedule C filers on the Found Plus plan). App feature only; no public API is documented.
+- [Found Business Rate Limits](https://apis.io/rate-limits/found-business/found-business-rate-limits/)
 
-- **Human URL:** [https://found.com/taxes](https://found.com/taxes)
+#### FinOps (1)
 
-#### Tags
+What the API costs to run, by operation.
 
-- Taxes
-- Estimated Taxes
-- 1099
+- [Found Business Finops](https://apis.io/finops/found-business/found-business-finops/)
 
-#### Properties
+## Where to find this API
 
-- [Documentation](https://found.com/taxes)
-- [OpenAPI](openapi/found-business-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/found-business.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/found-business.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-### Found Invoicing
-
-Create and send invoices, track their status, and get paid directly into the Found account, with invoice income flowing into bookkeeping and tax estimates. App feature only; no public API is documented.
-
-- **Human URL:** [https://found.com/invoicing](https://found.com/invoicing)
-
-#### Tags
-
-- Invoicing
-- Payments
-- Billing
-
-#### Properties
-
-- [Documentation](https://found.com/invoicing)
-- [OpenAPI](openapi/found-business-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/found-business.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/found-business.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Found Contractor Management
-
-Unlimited contractor payments with no per-contractor fees, flexible payment methods, W-9 collection, and free 1099-NEC generation and filing. App feature only; no public API is documented.
-
-- **Human URL:** [https://found.com/contractors](https://found.com/contractors)
-
-#### Tags
-
-- Contractors
-- 1099-NEC
-- Payments
-
-#### Properties
-
-- [Documentation](https://found.com/contractors)
-- [OpenAPI](openapi/found-business-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/found-business.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/found-business.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
-
-- [LinkedIn](https://www.linkedin.com/company/foundforbusiness)
 - [Website](https://found.com/)
 - [Documentation](https://found.com/help)
-- [Plans](plans/found-business-plans-pricing.yml)
-- [Rate Limits](rate-limits/found-business-rate-limits.yml)
-- [Fin Ops](finops/found-business-finops.yml)
+- [Blog](https://found.com/resources)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 19.3** — emerging · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 60.0 |
+| Contract quality | 29.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 15.8 |
+
+**Agent readiness 22.2** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 13.4** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/found-business/](https://apis.io/providers/found-business/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Found: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/found-business/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
